@@ -1,0 +1,43 @@
+import Link from "next/link";
+
+const linkStyle = {
+  display: "flex",
+  marginRight: 20,
+  justifyContent: "flex-start"
+};
+
+const Header = () => (
+  <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+    <div className="container">
+      <a className="navbar-brand" href="#">
+        Symposium
+      </a>
+      <div className="collapse navbar-collapse">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-items">
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/about">
+              <a className="nav-link">About</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+);
+
+export default Header;
+
+{
+  /* <Link href='/'>
+<a style={linkStyle}>Home</a>
+</Link>
+
+<Link style={linkStyle} href="/about">
+<a style={linkStyle}>About</a>
+</Link> */
+}

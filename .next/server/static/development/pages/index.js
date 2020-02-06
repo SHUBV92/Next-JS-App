@@ -93,6 +93,194 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/shubindervirk/Desktop/Makers/Other_Projects/NextJS/hello-next/components/Header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const linkStyle = {
+  display: "flex",
+  marginRight: 20,
+  justifyContent: "flex-start"
+};
+
+const Header = () => __jsx("nav", {
+  className: "navbar navbar-expand navbar-dark bg-dark mb-4",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "navbar-brand",
+  href: "#",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "Symposium"), __jsx("div", {
+  className: "collapse navbar-collapse",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("ul", {
+  className: "navbar-nav ml-auto",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, __jsx("li", {
+  className: "nav-items",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "nav-link",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}, "Home"))), __jsx("li", {
+  className: "nav-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/about",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "nav-link",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 24
+  },
+  __self: undefined
+}, "About")))))));
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+{
+  /* <Link href='/'>
+  <a style={linkStyle}>Home</a>
+  </Link>
+  <Link style={linkStyle} href="/about">
+  <a style={linkStyle}>About</a>
+  </Link> */
+}
+
+/***/ }),
+
+/***/ "./components/MyLayout.js":
+/*!********************************!*\
+  !*** ./components/MyLayout.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+var _jsxFileName = "/Users/shubindervirk/Desktop/Makers/Other_Projects/NextJS/hello-next/components/MyLayout.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const layoutStyle = {
+  display: "flex",
+  justifycontent: "spaced-evenly",
+  margin: 20,
+  padding: 20,
+  border: "1px solid #DDD"
+};
+
+const withLayout = Page => {
+  return () => __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, "This is Mad"), __jsx("link", {
+    rel: "stylesheet",
+    href: "https://bootswatch.com/4/cerulean/bootstrap.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }), __jsx(Page, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (withLayout);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1773,44 +1961,23 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
 var _jsxFileName = "/Users/shubindervirk/Desktop/Makers/Other_Projects/NextJS/hello-next/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Index() {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    title: "About Page",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "About Page")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Hello Next.js"));
-}
+
+const Page = () => __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 3
+  },
+  __self: undefined
+}, "Hello Next.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"])(Page));
 
 /***/ }),
 
@@ -1878,6 +2045,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
