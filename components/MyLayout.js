@@ -1,28 +1,19 @@
 import Head from "next/head";
-import Header from "./Header";
+import NavBar from "./NavBar";
 
-const layoutStyle = {
-  display: "flex",
-  justifycontent: "spaced-evenly",
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
-};
 
-const Layout = Page => {
-  return () => (
-    <div>
-      <Head>
-        <title>This is Mad</title>
-        <link
-          rel="stylesheet"
-          href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
-        />
-        <Header />
-        <Page />
-      </Head>
-    </div>
-  );
-};
+const Layout = props => (
+  <div>
+    <Head>
+      <title>Crazy</title>
+      <link
+        rel="stylesheet"
+        href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+      />
+    </Head>
+    <NavBar />
+    {props.children}
+  </div>
+);
 
 export default Layout;

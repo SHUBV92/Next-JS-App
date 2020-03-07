@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport withLayout from \"../components/MyLayout\";\n\nvar Page = function Page() {\n  return __jsx(\"p\", null, \"Hello Next.js\");\n};\n\nexport default withLayout(Page);","map":null,"metadata":{},"sourceType":"module"}
